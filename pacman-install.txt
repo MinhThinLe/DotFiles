@@ -12,7 +12,6 @@ chromium
 dolphin
 dust
 efibootmgr
-egl-wayland
 eza
 fastfetch
 fcitx5
