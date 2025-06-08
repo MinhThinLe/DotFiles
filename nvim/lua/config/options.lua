@@ -39,7 +39,5 @@ require('render-markdown').setup({
 })
 
 require('nvim-treesitter.configs').setup({
-    hightlight = {
-        enable = true,
-    }
+    hightlight = { enable = true },
 })
