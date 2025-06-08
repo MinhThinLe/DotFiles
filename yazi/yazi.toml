@@ -1,0 +1,40 @@
+[opener]
+play = [
+	{ run = 'vlc "$@"', orphan = true, for = "unix" },
+]
+edit = [
+	{ run = '$EDITOR "$@"', block = true, for = "unix" },
+]
+open = [
+	{ run = 'xdg-open "$@"', desc = "Open", orphan = true },
+]
+zathura = [
+	{ run = 'zathura "$@"', desc = "Open with zathura", orphan = true }
+]
+gwenview = [
+	{ run = 'gwenview "$@"', desc = "Open with Gwenview", orphan = true }
+]
+wine = [
+	{ run = 'wine "$@"', desc = "Run Windows programs", orphan = true }
+]
+bat = [
+	{ run = 'bat "$@"', desc = "Open with bat", block = true }
+]
+
+[open]
+prepend_rules = [
+	{ name = "*.pdf", use = [ "zathura", "open" ]},
+	{ name = "*.exe", use = "wine" },
+	# Multiple openers for a single rule
+	{ name = "*.html", use = [ "open", "edit" ] },
+]
+
+append_rules = [
+	{ name = "*", use = [ "edit", "bat", "open" ]},
+]
+
+rules = [
+	{ mime = "image/*", use = "gwenview"},
+	{ mime = "text/*", use = "edit"},
+	{ mime = "video/*", use = "play"},
+]
