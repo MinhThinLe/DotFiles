@@ -18,6 +18,7 @@ set_map('n', '<leader>l', ':tabnext<CR>')
 set_map('n', '<leader>h', ':tabprevious<CR>')
 set_map('t', '<Esc>', '<C-\\><C-n>')
 set_map('n', '<leader>y', '"+y')
+set_map('i', '<C-BS>', '<ESC>bdwi') -- Ctrl backspace bind
 
 set_map({ "s", "n" }, "<leader>n", function() ls.jump(1) end, { silent = true })
 set_map({ "s", "n" }, "<leader>p", function() ls.jump(-1) end, { silent = true })

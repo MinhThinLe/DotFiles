@@ -28,6 +28,7 @@ npairs.add_rule(Rule("```", "```", "typst"))
 
 require('render-markdown').setup({
     render_modes = true,
+    preset = 'obsidian',
 })
 
 require('nvim-treesitter.configs').setup({

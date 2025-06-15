@@ -49,3 +49,6 @@ if not vim.loop.fs_stat(pipepath) then
 end
 
 vim.lsp.enable('gdscript')
+vim.diagnostic.config({
+    virtual_text = true,
+})
