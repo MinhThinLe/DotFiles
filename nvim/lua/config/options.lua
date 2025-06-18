@@ -12,6 +12,7 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 
 vim.opt.scrolloff = 8
+vim.opt.splitright = true
 
 vim.cmd("colorscheme gruvbox")
 vim.cmd("language en_US.utf8")

@@ -8,6 +8,7 @@ set_map('n', '<leader>fg', builtin.live_grep, {})
 set_map('n', '<leader>ss', builtin.spell_suggest, {})
 set_map('n', '<leader>ds', builtin.lsp_document_symbols, {})
 set_map('n', '<leader>fd', builtin.diagnostics, {})
+set_map('n', '<leader>fb', builtin.buffers, {})
 
 set_map('n', '<leader>w', ':w<CR>')
 set_map('n', '<leader>q', ':q<CR>')
