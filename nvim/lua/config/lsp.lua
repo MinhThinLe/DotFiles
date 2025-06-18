@@ -39,16 +39,13 @@ cmp.setup({
     },
 })
 
-require("lualine").setup {
-    options = { theme = "gruvbox" }
-}
-
 local pipepath = vim.fn.stdpath("cache") .. "/server.pipe"
 if not vim.loop.fs_stat(pipepath) then
     vim.fn.serverstart(pipepath)
 end
 
 vim.lsp.enable('gdscript')
+
 vim.diagnostic.config({
     virtual_text = true,
 })

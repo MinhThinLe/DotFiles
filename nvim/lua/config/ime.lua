@@ -1,6 +1,6 @@
 local should_reenable_fcitx = false
 
-function is_fcitx_active()
+local function is_fcitx_active()
     local output = io.popen("fcitx5-remote")
     -- Because the command above returns 2 if fcitx is active and 2 if it isn`t
     return tonumber(output:read("*all")) == 2

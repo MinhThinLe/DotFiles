@@ -35,3 +35,20 @@ require('render-markdown').setup({
 require('nvim-treesitter.configs').setup({
     hightlight = { enable = true },
 })
+
+require("lualine").setup {
+    options = {
+        theme = "gruvbox",
+        section_separators = '',
+        component_separators = '|',
+    },
+    tabline = {
+        lualine_a = { 'tabs'},
+        lualine_b = { 'lsp_status'},
+        lualine_c = {},
+        lualine_x = {},
+        lualine_y = {},
+        lualine_z = {}
+    }
+}
+
