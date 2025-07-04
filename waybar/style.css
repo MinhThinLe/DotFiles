@@ -1,7 +1,7 @@
 * {
     border: none;
     font-family: "JetBrainsMono Nerd Font";
-    font-size: 13px;
+    font-size: 14px;
     min-height: 10px;
 }
 
@@ -9,20 +9,13 @@ window#waybar {
     background-color: #1e1e28;
 }
 
-#workspaces, #pulseaudio, #clock, #tray #power, #cpu, #backlight, #memory, #temperature, #battery, #custom-launcher {
+#workspaces, #pulseaudio, #clock, #tray, #cpu, #backlight, #memory, #temperature, #battery, #custom-notification {
     border-radius: 7px;
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 2px;
     margin-bottom: 2px;
     color: #363a4f;
-}
-
-#custom-launcher {
-    background-color: #363a4f;
-    padding-left: 4px;
-    padding-right: 4px;
-    color: #b8c0e0;
 }
 
 #cpu {
@@ -86,7 +79,14 @@ window#waybar {
 
 #power {
     border-radius: 7px;
-    background-color: #f18eac;
     padding-left: 4px;
     padding-right: 4px;
+}
+
+#custom-notification {
+    color: #eeeeee;
+    background-color: #363a4f;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: "NotoSansMono Nerd Font";
 }

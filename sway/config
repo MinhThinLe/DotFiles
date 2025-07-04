@@ -41,6 +41,8 @@ output eDP-1 scale 1.2
           timeout 600 'hyprlock' \
           before-sleep 'hyprlock'
 
+exec wlsunset -t 3900 -S 6:30 -s 19:30 -g 0.8
+
 ### Key bindings
 #
 # Basics:
@@ -222,8 +224,8 @@ client.focused #98971A #98971A #98971A #98971A
 default_border pixel 2
 default_floating_border pixel 2
 
-gaps inner 5
-gaps outer 0
+gaps inner 8
+gaps outer 5
 
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="bubble"] floating enable
@@ -232,3 +234,7 @@ for_window [window_role="Preferences"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
 for_window [instance="update_installer"] floating enable
+
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
