@@ -41,7 +41,7 @@ output eDP-1 scale 1.2
           timeout 600 'hyprlock' \
           before-sleep 'hyprlock'
 
-exec wlsunset -t 3900 -S 6:30 -s 19:30 -g 0.8
+exec wlsunset -t 3900 -S 6:30 -s 19:30
 
 ### Key bindings
 #
@@ -55,6 +55,9 @@ exec wlsunset -t 3900 -S 6:30 -s 19:30 -g 0.8
 
     # Start your launcher
     bindsym $mod+d exec $menu
+
+    # Open notification panel
+    bindsym $mod+n exec swaync-client -t -sw
 
 	# Change volume
 	bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
@@ -216,8 +219,8 @@ include ~/.config/sway/config.d/50-systemd-user.conf
 # Autostart
 exec fcitx5 -d
 exec nm-applet
-exec mako
 exec waybar
+exec swaync
 
 client.focused #98971A #98971A #98971A #98971A
 
