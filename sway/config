@@ -19,6 +19,7 @@ set $term kitty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu ~/.config/rofi/launchers/type-1/launcher.sh
+set $screenshot ~/.config/rofi/applets/bin/screenshot.sh
 
 include ./config.d/50-systemd-user.conf
 include ./keybinds.sh
@@ -27,7 +28,7 @@ include ./keybinds.sh
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg ./wallpapers/mountains.png fill
-output eDP-1 scale 1.2
+output eDP-1 scale 1.25
 #
 # Example configuration:
 #
