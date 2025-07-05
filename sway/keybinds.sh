@@ -28,6 +28,8 @@ bindsym XF86AudioMicMute exec pactl set-source-mute alsa_input.pci-0000_00_1f.3.
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 
+bindsym XF86Calculator exec galculator
+
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
 # Despite the name, also works for non-floating windows.
