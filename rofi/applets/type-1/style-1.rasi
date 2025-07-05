@@ -36,6 +36,7 @@ window {
     border-color:                @selected;
     cursor:                      "default";
     background-color:            @background;
+    border-radius:               10px;
 }
 
 /*****----- Main Box -----*****/
@@ -84,7 +85,7 @@ message {
     margin:                      0px;
     padding:                     10px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               10px;
     border-color:                @selected;
     background-color:            @background-alt;
     text-color:                  @foreground;
@@ -115,7 +116,7 @@ element {
     enabled:                     true;
     padding:                     10px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               10px;
     border-color:                @selected;
     background-color:            transparent;
     text-color:                  @foreground;

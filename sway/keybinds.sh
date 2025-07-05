@@ -16,6 +16,10 @@ bindsym $mod+n exec swaync-client -t -sw
 
 # Open screenshot menu
 bindsym Print exec $screenshot
+
+# Open powermenu
+bindsym $mod+p exec $powermenu
+
 # Change volume
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%

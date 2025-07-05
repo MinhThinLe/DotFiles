@@ -18,8 +18,9 @@ set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu ~/.config/rofi/launchers/type-1/launcher.sh
+set $menu       ~/.config/rofi/launchers/type-1/launcher.sh
 set $screenshot ~/.config/rofi/applets/bin/screenshot.sh
+set $powermenu  ~/.config/rofi/applets/bin/powermenu.sh
 
 include ./config.d/50-systemd-user.conf
 include ./keybinds.sh

@@ -9,7 +9,7 @@ window#waybar {
     background-color: #1e1e28;
 }
 
-#workspaces, #pulseaudio, #clock, #tray, #cpu, #backlight, #memory, #temperature, #battery, #custom-notification {
+#workspaces, #pulseaudio, #clock, #tray, #cpu, #backlight, #memory, #temperature, #battery, #custom-notification, #mode {
     border-radius: 7px;
     padding-left: 10px;
     padding-right: 10px;
@@ -24,7 +24,6 @@ window#waybar {
 
 #workspaces {
     transition: none;
-    color: #363a4f;
     background: #363a4f;	
     padding-left: 0px;
     padding-right: 7px;
@@ -89,4 +88,9 @@ window#waybar {
     padding-left: 12px;
     padding-right: 12px;
     font-family: "NotoSansMono Nerd Font";
+}
+
+#mode {
+    background-color: #363a4f;
+    color: #b8c0e0;
 }
