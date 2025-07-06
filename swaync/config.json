@@ -29,7 +29,7 @@
   "transition-time": 200,
   "hide-on-clear": false,
   "hide-on-action": true,
-  "text-empty": "No Notifications",
+  "text-empty": "Rien à voir pour le moment :)",
   "script-fail-notify": true,
   "scripts": {
     "example-script": {
@@ -53,6 +53,7 @@
     "inhibitors",
     "title",
     "dnd",
+    "volume",
     "notifications"
   ],
   "widget-config": {
@@ -68,6 +69,12 @@
     },
     "dnd": {
       "text": "Do Not Disturb"
+    },
+    "volume": {
+        "label": "󰓃"
+    },
+    "backlight": {
+
     },
     "label": {
       "max-lines": 5,

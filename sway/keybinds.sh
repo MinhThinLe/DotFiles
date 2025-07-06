@@ -28,7 +28,7 @@ bindsym XF86AudioMicMute exec pactl set-source-mute alsa_input.pci-0000_00_1f.3.
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 
-bindsym XF86Calculator exec galculator
+bindsym XF86Calculator exec gnome-calculator
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
@@ -41,7 +41,7 @@ floating_modifier $mod normal
 bindsym $mod+Shift+r reload
 
 # Exit sway (logs you out of your Wayland session)
-bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+bindsym $mod+Shift+e exec swaynag -t warning -m 'Veux-tu vraiment quitter Sway?' -B 'Oui, quitter Sway' 'swaymsg exit'
 #
 # Moving around:
 #

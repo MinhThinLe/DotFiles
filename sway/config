@@ -98,9 +98,14 @@ for_window {
     [window_type="dialog"] floating enable
     [window_type="menu"] floating enable
     [instance="update_installer"] floating enable
-    [app_id="galculator"] floating enable
+    [app_id="org.gnome.Calculator"] floating enable
 }
 
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+# Swayfx stuff, comment out if on vanilla sway
+corner_radius 10
+shadows enable
+blur enable
