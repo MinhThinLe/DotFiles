@@ -16,5 +16,5 @@ theme='style-5'
 
 ## Run
 rofi \
-    -show drun \
+    -show combi -combi-modes "drun,window" \
     -theme ${dir}/${theme}.rasi
