@@ -24,10 +24,10 @@ fi
 # Options
 layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
 if [[ "$layout" == 'NO' ]]; then
-	option_1=" Lock"
-	option_2=" Logout"
-	option_3=" Reboot"
-	option_4=" Shutdown"
+	option_1=" Verrouiller"
+	option_2=" Déconnecte-toi"
+	option_3=" Redémarrer"
+	option_4=" Éteindre"
 	yes=' Yes'
 	no=' No'
 else
@@ -64,7 +64,7 @@ confirm_cmd() {
 		-theme-str 'textbox {horizontal-align: 0.5;}' \
 		-dmenu \
 		-p 'Confirmation' \
-		-mesg 'Are you Sure?' \
+		-mesg 'Es tu sûr' \
 		-theme ${theme}
 }
 

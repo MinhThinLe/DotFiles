@@ -11,7 +11,7 @@
 configuration {
     modi:                       "";
     show-icons:                 true;
-    display-combi:              " / ";
+    display-combi:              " /  ";
     display-drun:               "";
     display-run:                "";
     display-filebrowser:        "";
@@ -128,7 +128,7 @@ entry {
     background-color:            inherit;
     text-color:                  inherit;
     cursor:                      text;
-    placeholder:                 "Search...";
+    placeholder:                 "Rechercher...";
     placeholder-color:           inherit;
 }
 num-filtered-rows {

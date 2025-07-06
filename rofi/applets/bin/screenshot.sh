@@ -10,7 +10,7 @@ source "$HOME"/.config/rofi/applets/shared/theme.bash
 theme="$type/$style"
 
 # Theme Elements
-prompt='Screenshot'
+prompt='Capture d’écran'
 mesg="DIR: `xdg-user-dir PICTURES`/Screenshots"
 
 if [[ "$theme" == *'type-1'* ]]; then
@@ -34,9 +34,9 @@ fi
 # Options
 layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
 if [[ "$layout" == 'NO' ]]; then
-	option_1=" Capture Desktop"
-	option_2=" Capture Area"
-	option_3=" Capture Window"
+	option_1=" Capture tout l’écran"
+	option_2=" Capture une région rectangulaire"
+	option_3=" Capture une fênetre"
 else
 	option_1=""
 	option_2=""
