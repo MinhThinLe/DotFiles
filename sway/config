@@ -19,8 +19,9 @@ set $term           kitty
 set $menu           ~/.config/rofi/launchers/type-1/launcher.sh
 set $screenshot     ~/.config/rofi/applets/bin/screenshot.sh
 set $powermenu      ~/.config/rofi/applets/bin/powermenu.sh
+set $clipboard_man  ~/.config/rofi/applets/bin/clipboard.sh
+set $calculator     ~/.config/rofi/applets/bin/calculator.sh
 set $notif_center   swaync-client -t -sw
-set $clipboard_man  clapboard
 
 include ./config.d/50-systemd-user.conf
 include ./keybinds.sh
@@ -80,7 +81,7 @@ exec swayidle -w \
           timeout 600 'hyprlock' \
           before-sleep 'hyprlock'
 exec wlsunset -t 3900 -S 6:30 -s 19:30
-exec clapboard --record
+exec wl-paste --watch cliphist store
 
 client.focused #98971A #98971A #98971A #98971A
 

@@ -7,12 +7,13 @@
 # Kill focused window
 bindsym $mod+c kill
 
-bindsym $mod+Return exec $term
-bindsym $mod+d      exec $menu
-bindsym $mod+n      exec $notif_center
-bindsym Print       exec $screenshot
-bindsym $mod+p      exec $powermenu
-bindsym $mod+z      exec $clipboard_man
+bindsym $mod+Return             exec $term
+bindsym $mod+d                  exec $menu
+bindsym $mod+n                  exec $notif_center
+bindsym Print                   exec $screenshot
+bindsym $mod+p                  exec $powermenu
+bindsym $mod+z                  exec $clipboard_man
+bindsym XF86Calculator          exec $calculator
 
 # Change volume
 bindsym XF86AudioLowerVolume    exec pactl set-sink-volume @DEFAULT_SINK@ -5%
@@ -21,7 +22,6 @@ bindsym XF86AudioMute           exec pactl set-sink-mute alsa_output.pci-0000_00
 bindsym XF86AudioMicMute        exec pactl set-source-mute alsa_input.pci-0000_00_1f.3.analog-stereo toggle 
 bindsym XF86MonBrightnessDown   exec brightnessctl set 5%-
 bindsym XF86MonBrightnessUp     exec brightnessctl set +5%
-bindsym XF86Calculator          exec gnome-calculator
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
