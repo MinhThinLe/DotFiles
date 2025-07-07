@@ -12,7 +12,7 @@ bindsym $mod+d      exec $menu
 bindsym $mod+n      exec $notif_center
 bindsym Print       exec $screenshot
 bindsym $mod+p      exec $powermenu
-bindsym $mod+v      exec $clipboard_man
+bindsym $mod+z      exec $clipboard_man
 
 # Change volume
 bindsym XF86AudioLowerVolume    exec pactl set-sink-volume @DEFAULT_SINK@ -5%

@@ -41,12 +41,6 @@ output eDP-1 scale 1.25
 #
 # Example configuration:
 #
- exec swayidle -w \
-          timeout 300 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-          timeout 600 'hyprlock' \
-          before-sleep 'hyprlock'
-
-exec wlsunset -t 3900 -S 6:30 -s 19:30
 
 
 # Keyboard stuff
@@ -76,11 +70,17 @@ input "1267:12985:ELAN06FA:00_04F3:32B9_Touchpad" {
 # Read `man 5 sway-bar` for more information about this section.
 
 
-# Autostart
+# Background processes
 exec fcitx5 -d
 exec nm-applet
 exec waybar
 exec swaync
+exec swayidle -w \
+          timeout 300 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+          timeout 600 'hyprlock' \
+          before-sleep 'hyprlock'
+exec wlsunset -t 3900 -S 6:30 -s 19:30
+exec clapboard --record
 
 client.focused #98971A #98971A #98971A #98971A
 
