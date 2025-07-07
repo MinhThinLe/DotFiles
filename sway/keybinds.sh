@@ -3,32 +3,25 @@
 # Basics:
 #
 # Start a terminal
-bindsym $mod+Return exec $term
 
 # Kill focused window
 bindsym $mod+c kill
 
-# Start your launcher
-bindsym $mod+d exec $menu
-
-# Open notification panel
-bindsym $mod+n exec swaync-client -t -sw
-
-# Open screenshot menu
-bindsym Print exec $screenshot
-
-# Open powermenu
-bindsym $mod+p exec $powermenu
+bindsym $mod+Return exec $term
+bindsym $mod+d      exec $menu
+bindsym $mod+n      exec $notif_center
+bindsym Print       exec $screenshot
+bindsym $mod+p      exec $powermenu
+bindsym $mod+v      exec $clipboard_man
 
 # Change volume
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym XF86AudioMute exec pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo toggle 
-bindsym XF86AudioMicMute exec pactl set-source-mute alsa_input.pci-0000_00_1f.3.analog-stereo toggle 
-bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
-bindsym XF86MonBrightnessUp exec brightnessctl set +5%
-
-bindsym XF86Calculator exec gnome-calculator
+bindsym XF86AudioLowerVolume    exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioRaiseVolume    exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioMute           exec pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo toggle 
+bindsym XF86AudioMicMute        exec pactl set-source-mute alsa_input.pci-0000_00_1f.3.analog-stereo toggle 
+bindsym XF86MonBrightnessDown   exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp     exec brightnessctl set +5%
+bindsym XF86Calculator          exec gnome-calculator
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
@@ -103,9 +96,8 @@ bindsym $mod+b splith
 bindsym $mod+v splitv
 
 # Switch the current container between different layout styles
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+t layout tabbed
+bindsym $mod+s layout toggle split
 
 # Make the current focus fullscreen
 bindsym $mod+f fullscreen

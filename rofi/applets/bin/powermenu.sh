@@ -28,8 +28,8 @@ if [[ "$layout" == 'NO' ]]; then
 	option_2=" Déconnecte-toi"
 	option_3=" Redémarrer"
 	option_4=" Éteindre"
-	yes=' Yes'
-	no=' No'
+	yes=' Oui'
+	no=' Non'
 else
 	option_1=""
 	option_2=""

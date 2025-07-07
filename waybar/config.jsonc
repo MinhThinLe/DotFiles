@@ -68,8 +68,8 @@
         "critical": 15
     },
     "format": "{capacity}% {icon}",
-    "format-icons": ["", "", "", "", ""],
-    "format-charging": "{capacity}%  ",
+    "format-icons": ["", "", "", "", "", "", "", "", "", ""],
+    "format-charging": "{capacity}% ",
     "max-length": 25
     },
 
