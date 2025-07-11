@@ -1,50 +1,29 @@
-# Default config for sway
-#
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
-# Read `man 5 sway` for a complete reference.
-
-### Variables
-#
-# Logo key. Use Mod1 for Alt.
-set $mod Mod4
-# Home row direction keys, like vim
-set $left h
-set $down j
-set $up k
-set $right l
-# Your preferred terminal emulator
-# Various utilities
-set $term           kitty
-set $menu           ~/.config/rofi/launchers/type-1/launcher.sh
-set $screenshot     ~/.config/rofi/applets/bin/screenshot.sh
-set $powermenu      ~/.config/rofi/applets/bin/powermenu.sh
-set $clipboard_man  ~/.config/rofi/applets/bin/clipboard.sh
-set $calculator     ~/.config/rofi/applets/bin/calculator.sh
-set $notif_center   swaync-client -t -sw
-
+# Set some variables, their name should be descriptive enough
+set {
+    $mod Mod4
+    $left h
+    $down j
+    $up k
+    $right l
+    $term kitty
+    $menu ~/.config/rofi/launchers/type-1/launcher.sh
+    $screenshot ~/.config/rofi/applets/bin/screenshot.sh
+    $powermenu ~/.config/rofi/applets/bin/powermenu.sh
+    $clipboard_man ~/.config/rofi/applets/bin/clipboard.sh
+    $calculator ~/.config/rofi/applets/bin/calculator.sh
+    $notif_center swaync-client -t -sw
+}
+# These scripts depend on the value of previously set variables so they can't
+# be at the top despite how aesthetically pleasing that would look
 include ./config.d/50-systemd-user.conf
 include ./keybinds.sh
 
 ### Output configuration
-#
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg ./wallpapers/mountains.png fill
 output eDP-1 scale 1.25
-#
-# Example configuration:
-#
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
-#
-# You can get the names of your outputs by running: swaymsg -t get_outputs
-
-### Idle configuration
-#
-# Example configuration:
-#
 
 
-# Keyboard stuff
+# Input stuff
 input * {
 	repeat_delay 250
 	repeat_rate 50
@@ -54,34 +33,28 @@ input "type:keyboard" {
     xkb_options caps:escape
 }
 
-input "9390:8213:RAPOO_Rapoo_2.4G_Wireless_Device_Mouse" {
+input "type:touchpad" {
+	accel_profile "flat"
+	pointer_accel 0.2
+	tap enabled
+    dwt disabled
+}
+
+input "type:pointer" {
 	accel_profile "flat"
 	pointer_accel 0.45
 }
 
-input "1267:12985:ELAN06FA:00_04F3:32B9_Touchpad" {
-	accel_profile "flat"
-	pointer_accel 0.2
-	tap enabled
-}
-
-#
-# Status Bar:
-#
-# Read `man 5 sway-bar` for more information about this section.
-
-
 # Background processes
-exec fcitx5 -d
-exec nm-applet
-exec waybar
-exec swaync
-exec swayidle -w \
-          timeout 300 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-          timeout 600 'hyprlock' \
-          before-sleep 'hyprlock'
-exec wlsunset -t 3900 -S 6:30 -s 19:30
-exec wl-paste --watch cliphist store
+exec {
+    fcitx5 -d
+    nm-applet
+    waybar
+    swaync
+    hypridle
+    wlsunset -t 3900 -S 6:30 -s 19:30
+    wl-paste --watch cliphist store
+}
 
 client.focused #98971A #98971A #98971A #98971A
 
