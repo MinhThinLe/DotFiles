@@ -1,6 +1,0 @@
-launcher = [ "rofi", "-dmenu", "-theme", "~/.config/rofi/launchers/type-1/style-5.rasi"]
-history_size = 20
-
-[favorites]
-# You can add your favorite clipboard pastes here like this:
-# "some key" = "some value"
