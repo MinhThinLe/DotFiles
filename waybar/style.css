@@ -36,7 +36,7 @@ window#waybar {
 }
 
 #workspaces button.focused {
-    color: #a6da95;
+    color: #d79921;
 }
 
 #workspaces button:hover {
