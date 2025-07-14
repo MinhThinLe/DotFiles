@@ -14,6 +14,7 @@ bindsym Print                   exec $screenshot
 bindsym $mod+p                  exec $powermenu
 bindsym $mod+z                  exec $clipboard_man
 bindsym XF86Calculator          exec $calculator
+bindsym $mod+Shift+s            exec $display_configurator
 
 # Change volume
 bindsym XF86AudioLowerVolume    exec pactl set-sink-volume @DEFAULT_SINK@ -5%

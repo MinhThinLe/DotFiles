@@ -6,12 +6,13 @@ set {
     $up k
     $right l
     $term kitty
+    $notif_center swaync-client -t -sw
     $menu ~/.config/rofi/launchers/type-1/launcher.sh
     $screenshot ~/.config/rofi/applets/bin/screenshot.sh
     $powermenu ~/.config/rofi/applets/bin/powermenu.sh
     $clipboard_man ~/.config/rofi/applets/bin/clipboard.sh
     $calculator ~/.config/rofi/applets/bin/calculator.sh
-    $notif_center swaync-client -t -sw
+    $display_configurator ~/.config/rofi/applets/bin/monitor_setup.sh
 }
 # These scripts depend on the value of previously set variables so they can't
 # be at the top despite how aesthetically pleasing that would look
