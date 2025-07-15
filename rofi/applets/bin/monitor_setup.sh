@@ -38,5 +38,6 @@ case ${action_chosen} in
     $option_3)
         wlr-randr --output eDP-1 --on
         wlr-randr --output HDMI-A-1 --on
+        wlr-randr --output HDMI-A-1 --right-of eDP-1
         ;;
 esac

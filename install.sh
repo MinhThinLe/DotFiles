@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Links and shits
-configs=("kew" "nvim" "waybar" "zathura" "kitty" "sway" "yazi" "rofi" "hypr" "swaync")
+configs=("kew" "nvim" "waybar" "zathura" "kitty" "sway" "yazi" "rofi" "hypr" "mako")
 
 for app in ${configs[@]}; do
     ln -sf $(pwd)/$app $HOME/.config/
