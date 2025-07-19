@@ -87,6 +87,6 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
 # Swayfx stuff, comment out if on vanilla sway
-corner_radius 10
-shadows enable
-blur enable
+# corner_radius 10
+# shadows enable
+# blur enable

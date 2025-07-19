@@ -34,12 +34,12 @@ fi
 # Options
 layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
 if [[ "$layout" == 'NO' ]]; then
-	option_1=" Capture tout l’écran"
-	option_2=" Capture une région rectangulaire"
+	option_1=" Capture une région rectangulaire"
+	option_2=" Capture tout l’écran"
 	option_3=" Capture une fênetre"
 else
-	option_1=""
-	option_2=""
+	option_1=""
+    option_2=""
 	option_3=""
 fi
 
@@ -101,9 +101,9 @@ shotarea () {
 # Execute Command
 run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
-		shotnow
-	elif [[ "$1" == '--opt2' ]]; then
 		shotarea
+	elif [[ "$1" == '--opt2' ]]; then
+		shotnow
 	elif [[ "$1" == '--opt3' ]]; then
 		shotwin
 	elif [[ "$1" == '--opt4' ]]; then

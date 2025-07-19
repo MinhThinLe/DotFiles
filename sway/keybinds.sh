@@ -13,7 +13,7 @@ bindsym $mod+n                  exec $notif_center
 bindsym Print                   exec $screenshot
 bindsym $mod+p                  exec $powermenu
 bindsym $mod+z                  exec $clipboard_man
-bindsym XF86Calculator          exec $calculator
+bindsym $mod+backslash          exec $calculator
 bindsym $mod+Shift+s            exec $display_configurator
 
 # Change volume
