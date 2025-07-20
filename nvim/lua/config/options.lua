@@ -14,8 +14,8 @@ vim.opt.wrap = false
 vim.opt.scrolloff = 8
 vim.opt.splitright = true
 
-vim.cmd("colorscheme gruvbox")
 vim.cmd("language en_US.utf8")
+vim.cmd("colorscheme gruvbox")
 
 require 'typst-preview'.setup {
     open_cmd = "firefox %s -P default --class typst-preview"
@@ -51,4 +51,3 @@ require("lualine").setup {
         lualine_z = { 'location' }
     },
 }
-
