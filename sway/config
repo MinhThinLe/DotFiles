@@ -54,6 +54,7 @@ exec {
     swaync
     wlsunset -t 3900 -S 6:30 -s 19:30
     wl-paste --watch cliphist store
+    kanshi
 }
 
 # Idle configuration

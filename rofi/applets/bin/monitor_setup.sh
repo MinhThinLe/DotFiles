@@ -8,11 +8,12 @@ prompt="Configuration d'affichage"
 
 option_1="Écran intégré seulement"
 option_2="Écran externe seulement"
-option_3="Deux écran simultanément"
+option_3="S'étendre"
+option_4="Dupliqué"
 
 rofi_cmd() {
 	rofi \
-        -theme-str "listview { lines: 3; }" \
+        -theme-str "listview { lines: 4; }" \
 		-dmenu \
 		-p "$prompt" \
 		-mesg "$message" \
@@ -21,23 +22,22 @@ rofi_cmd() {
 }
 
 run_rofi() {
-	echo -e "$option_1\n$option_2\n$option_3" | rofi_cmd
+	echo -e "$option_1\n$option_2\n$option_3\n$option_4" | rofi_cmd
 }
 
 action_chosen=$(run_rofi)
 
 case ${action_chosen} in
     $option_1)
-        wlr-randr --output eDP-1 --on
-        wlr-randr --output HDMI-A-1 --off
+        kanshictl switch builtin_monitor_only
         ;;
     $option_2)
-        wlr-randr --output eDP-1 --off
-        wlr-randr --output HDMI-A-1 --on
+        kanshictl switch external_monitor_only
         ;;
     $option_3)
-        wlr-randr --output eDP-1 --on
-        wlr-randr --output HDMI-A-1 --on
-        wlr-randr --output HDMI-A-1 --right-of eDP-1
+        kanshictl switch extend
+        ;;
+    $option4)
+        kanshictl switch duplicate
         ;;
 esac
