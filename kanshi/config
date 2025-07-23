@@ -13,6 +13,6 @@ profile extend {
 }
 
 profile duplicate {
-    output eDP-1 enable position 0,0
+    output eDP-1 enable mode 1920x1080@60Hz position 0,0
     output HDMI-A-1 enable mode 1920x1080@60Hz position 0,0
 }
