@@ -1,5 +1,6 @@
 {
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing": 4,
+    "reload_style_on_change": true,
     "modules-left": [
         "sway/workspaces",
         "sway/mode"
@@ -16,6 +17,7 @@
         "temperature",
         "battery",
         "pulseaudio",
+        "bluetooth",
         "tray"
     ],
 
@@ -63,16 +65,16 @@
 
     "battery": {
     //"bat": "BAT2",
-    "interval": 10,
-    "states": {
-        "warning": 30,
-        "critical": 15
-    },
-    "format": "{capacity}% {icon}",
-    "format-icons": ["", "", "", "", "", "", "", "", "", ""],
-    "format-charging": "{capacity}% ",
-    "max-length": 25,
-    "tooltip-format": "Nombre de cycles: {cycles}\nSanté de la batterie: {health}%\n{timeTo}"
+        "interval": 10,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", "", ""],
+        "format-charging": "{capacity}% ",
+        "max-length": 25,
+        "tooltip-format": "Nombre de cycles: {cycles}\nSanté de la batterie: {health}%\n{timeTo}"
     },
 
     "tray": {
@@ -95,5 +97,11 @@
 
     "sway/mode": {
         "format": "Mode: {}"
+    },
+
+    "bluetooth": {
+        "format": " {status}",
+        "format-disabled": "󰂲",
+        "format-connected": "{device_battery_percentage}% "
     }
 }

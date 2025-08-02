@@ -6,7 +6,8 @@ zstyle ':completion:*' matcher-list ''
 zstyle ':completion:*' menu select=1
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle ':completion:*' use-compctl true
-zstyle :compinstall filename '/home/archie/.zshrc'
+zstyle :compinstall filename "$HOME/.zshrc"
+bindkey -v
 
 autoload -Uz compinit
 compinit

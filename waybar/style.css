@@ -9,13 +9,13 @@ window#waybar {
     background-color: #1e1e28;
 }
 
-#workspaces, #pulseaudio, #clock, #tray, #cpu, #backlight, #memory, #temperature, #battery,  #mode {
+#workspaces, #pulseaudio, #clock, #tray, #cpu, #backlight, #memory, #temperature, #battery, #mode, #bluetooth {
     border-radius: 7px;
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 2px;
     margin-bottom: 2px;
-    color: #363a4f;
+    color: #282828;
 }
 
 #cpu {
@@ -51,7 +51,7 @@ window#waybar {
 }
 
 #clock {
-    background-color: #abe9b3;
+    background-color: #8ec07c;
 }
 
 #tray {
@@ -85,4 +85,8 @@ window#waybar {
 #mode {
     background-color: #363a4f;
     color: #b8c0e0;
+}
+
+#bluetooth {
+    background-color: #c8cb36;
 }
