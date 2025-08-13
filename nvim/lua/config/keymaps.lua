@@ -22,8 +22,8 @@ set_map('n', '<leader>y',               '"+y')
 set_map('i', '<C-BS>',            '<ESC>bdwi') -- Ctrl backspace bind
 set_map('n', '<leader>bb',          ':b#<CR>')
 
-set_map({ "s", "n" }, "<leader>n", function() ls.jump(1) end, { silent = true })
-set_map({ "s", "n" }, "<leader>p", function() ls.jump(-1) end, { silent = true })
+set_map({ "s", "i" }, "<C-j>", function() ls.jump(1) end, { silent = true })
+set_map({ "s", "n" }, "<C-k>", function() ls.jump(-1) end, { silent = true })
 
 vim.api.nvim_create_autocmd('LspAttach', {
     group = vim.api.nvim_create_augroup('user_lsp_attach', { clear = true }),

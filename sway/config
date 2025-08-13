@@ -52,9 +52,10 @@ exec {
     nm-applet
     waybar
     swaync
-    wlsunset -t 3900 -S 6:30 -s 19:30
+    wlsunset -t 3500 -S 6:30 -s 19:30
     wl-paste --watch cliphist store
     kanshi
+    kdeconnectd
 }
 
 # Idle configuration
@@ -78,11 +79,12 @@ titlebar_padding 3
 for_window {
     [window_role="pop-up"] floating enable
     [window_role="bubble"] floating enable
-    #[window_role="task_dialog"] floating enable
-    #[window_role="Preferences"] floating enable
-    #[window_type="dialog"] floating enable
-    #[window_type="menu"] floating enable
-    #[instance="update_installer"] floating enable
+    [window_role="task_dialog"] floating enable
+    [window_role="Preferences"] floating enable
+    [window_type="dialog"] floating enable
+    [window_type="menu"] floating enable
+    [class="Godot"] floating enable
+    [instance="update_installer"] floating enable
 }
 
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
