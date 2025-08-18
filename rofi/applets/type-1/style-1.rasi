@@ -32,8 +32,7 @@ window {
     margin:                      0px;
     padding:                     0px;
     border:                      1px solid;
-    border-radius:               0px;
-    border-color:                @selected;
+    border-color:                @border;
     cursor:                      "default";
     background-color:            @background;
     border-radius:               10px;
