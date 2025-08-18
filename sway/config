@@ -57,10 +57,11 @@ exec {
     nm-applet
     waybar
     swaync
-    wlsunset -t 3500 -S 6:30 -s 19:30
-    wl-paste --watch cliphist store
     kanshi
     kdeconnectd
+    kdeconnect-indicator
+    wlsunset -t 3500 -S 6:30 -s 19:30
+    wl-paste --watch cliphist store
 }
 
 # Idle configuration
