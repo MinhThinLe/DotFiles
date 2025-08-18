@@ -103,3 +103,10 @@ tooltip {
     border: 2px solid @border;
     color: @urgent_text;
 }
+
+#tray label {
+    color: @normal_text;
+    background-color: @background;
+    margin: 2px;
+    padding: 2px;
+}
