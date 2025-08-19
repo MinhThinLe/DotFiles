@@ -34,11 +34,11 @@ tooltip {
 #tray,
 #tray menu,
 #cpu,
+#backlight,
 #memory,
 #battery,
 #temperature,
 #bluetooth,
-#custom-notification,
 #idle_inhibitor,
 #mode,
 #pulseaudio {
@@ -49,14 +49,11 @@ tooltip {
     padding: 2px 8px;
 }
 
-#custom-notification {
-    padding: 8px 12px;
-}
-
 #workspaces {
     background-color: @background;
     margin: 6px 0px 6px 6px;
     border: 2px solid @border;
+    border-bottom: none;
 }
 
 .modules-left #workspaces button {
@@ -66,7 +63,8 @@ tooltip {
     padding: 5px 10px;
     margin: 0px;
     color: @normal_text;
-    border-radius: 3px;
+    border-radius: 0px;
+    border-bottom: 2px solid @border;
 }
 
 .modules-left #workspaces button.active {
@@ -109,4 +107,9 @@ tooltip {
     background-color: @background;
     margin: 2px;
     padding: 2px;
+}
+
+#tray item:hover {
+    background-color: @workspace_focused;
+    color: @urgent_text
 }
