@@ -5,6 +5,7 @@ profile external_monitor_only {
 
 profile builtin_monitor_only {
     output eDP-1 enable
+    output HDMI-A-1 disable
 }
 
 profile extend {
