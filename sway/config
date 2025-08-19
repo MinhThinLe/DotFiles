@@ -21,7 +21,7 @@ include ./keybinds.sh
 
 ### Output configuration
 output * bg ./wallpapers/evangelion.jpg fill
-output eDP-1 scale 1.25
+output eDP-1 scale 1.125
 
 
 # Input stuff
