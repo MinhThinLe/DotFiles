@@ -3,13 +3,13 @@ theme="$type/$style"
 
 echo $theme
 
-message="Choisis une configuration d'affichage"
-prompt="Configuration d'affichage"
+message="Choose a display configuration"
+prompt="Display configuration"
 
-option_1="Écran intégré seulement"
-option_2="Écran externe seulement"
-option_3="S'étendre"
-option_4="Dupliqué"
+option_1="Integrated monitor only"
+option_2="External monitor only"
+option_3="Extend"
+option_4="Duplicate"
 
 rofi_cmd() {
 	rofi \

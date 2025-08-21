@@ -11,4 +11,4 @@ rofi -show calc \
     -kb-accept-entry 'Control+Return' \
     -kb-accept-custom 'Return' \
     -calc-command "printf '{result}' | wl-copy -t 'text/plain;charset=utf-8'" \
-    -theme-str "listview { lines: 0; } entry { placeholder: \"Taper votre expression...\";}"
+    -theme-str "listview { lines: 0; } entry { placeholder: \"Type your equations...\";}"

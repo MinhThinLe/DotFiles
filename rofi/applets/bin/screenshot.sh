@@ -10,7 +10,7 @@ source "$HOME"/.config/rofi/applets/shared/theme.bash
 theme="$type/$style"
 
 # Theme Elements
-prompt='Capture d’écran'
+prompt='Take a screenshot'
 mesg="DIR: `xdg-user-dir PICTURES`/Screenshots"
 
 if [[ "$theme" == *'type-1'* ]]; then
@@ -34,9 +34,9 @@ fi
 # Options
 layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
 if [[ "$layout" == 'NO' ]]; then
-	option_1=" Capture une région rectangulaire"
-	option_2=" Capture tout l’écran"
-	option_3=" Capture une fênetre"
+	option_1=" Capture a region"
+	option_2=" Capture the entire screen"
+	option_3=" Capture a window"
 else
 	option_1=""
     option_2=""
@@ -72,7 +72,7 @@ fi
 
 # notify and view screenshot
 notify_view() {
-	notify_cmd_shot='dunstify -u low --replace=699'
+	notify_cmd_shot='notify-send -a Screenshot'
 	${notify_cmd_shot} "Copied to clipboard."
 	viewnior ${dir}/"$file"
 	if [[ -e "$dir/$file" ]]; then
@@ -83,29 +83,29 @@ notify_view() {
 }
 
 # take shots
-shotnow () {
-	cd ${dir} && shotman -c output
+capture_screen () {
+	cd ${dir} && shotman -c output -C
 	notify_view
 }
 
-shotwin () {
-	cd ${dir} && shotman -c window
+capture_window () {
+	cd ${dir} && shotman -c window -C
 	notify_view
 }
 
-shotarea () {
-	cd ${dir} && shotman -c region
+capture_area () {
+	cd ${dir} && shotman -c region -C
 	notify_view
 }
 
 # Execute Command
 run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
-		shotarea
+		capture_area
 	elif [[ "$1" == '--opt2' ]]; then
-		shotnow
+		capture_screen
 	elif [[ "$1" == '--opt3' ]]; then
-		shotwin
+		capture_window
 	elif [[ "$1" == '--opt4' ]]; then
 		shot5
 	elif [[ "$1" == '--opt5' ]]; then

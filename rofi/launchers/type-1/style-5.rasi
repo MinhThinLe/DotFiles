@@ -10,7 +10,7 @@
 /*****----- Configuration -----*****/
 configuration {
     modi:                       "";
-    icon-theme:                 "Fluent dark";
+    icon-theme:                 "Fluent";
     show-icons:                 true;
     display-combi:              " /  ";
     display-drun:               "";
@@ -129,7 +129,7 @@ entry {
     background-color:            inherit;
     text-color:                  inherit;
     cursor:                      text;
-    placeholder:                 "Rechercher...";
+    placeholder:                 "Search...";
     placeholder-color:           inherit;
 }
 num-filtered-rows {

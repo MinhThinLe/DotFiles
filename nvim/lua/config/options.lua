@@ -51,3 +51,5 @@ require("lualine").setup {
         lualine_z = { 'location' }
     },
 }
+
+require("oil").setup()

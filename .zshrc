@@ -25,6 +25,7 @@ alias l='ls'
 alias cat='bat'
 alias grep='rg'
 alias rpi-ssh='ssh -i ~/.ssh/id_rsa rpi@192.168.1.236'
+alias reload='source ~/.zshrc'
 
 export PATH=$HOME/.local/bin:$PATH
 export EDITOR=nvim
@@ -38,6 +39,3 @@ function y() {
 	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
-export ANDROID_HOME=/opt/android-sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools
