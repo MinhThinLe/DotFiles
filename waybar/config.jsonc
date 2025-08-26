@@ -1,5 +1,5 @@
 {
-    "spacing": 4,
+    "spacing": 0,
     "reload_style_on_change": true,
     "modules-left": [
         "sway/workspaces",
@@ -24,7 +24,7 @@
 
     "cpu": {
         "interval": 2,
-        "format": "{usage}% ",
+        "format": "󰍛 {usage}%",
         "max-length": 10
     },
 
@@ -49,12 +49,12 @@
 
     "backlight": {
         "device": "intel_backlight",
-        "format": "{percent}% {icon}",
+        "format": " {percent}%",
         "format-icons": ["", ""]
     },
 
     "pulseaudio": {
-        "format": "{volume}% {icon} ",
+        "format": "{icon} {volume}%",
         "format-muted": "",
         "format-icons": {
             "headphone": "",
@@ -71,9 +71,9 @@
         "warning": 30,
         "critical": 15
     },
-    "format": "{capacity}% {icon}",
+    "format": "{icon} {capacity}%",
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂀", "󰂁", "󰁹"],
-    "format-charging": "{capacity}% 󰂄",
+    "format-charging": "chr {capacity}% 󰂄",
     "max-length": 25,
     "tooltip-format": "Cycles: {cycles}\nBattery Health: {health}%\n{timeTo}"
     },
@@ -86,13 +86,13 @@
     "temperature": {
         "thermal-zone": 8,
         "critical-threshold": 70,
-        "format": "{temperatureC}°C ",
+        "format": " {temperatureC} °C",
         "interval": 5
     },
 
     "memory": {
         "interval": 30,
-        "format": "{}% ",
+        "format": " {}%",
         "max-length": 10
     },
 
@@ -101,7 +101,7 @@
     },
 
     "bluetooth": {
-        "format": " {status}",
+        "format": "󰂯 {status}",
         "format-disabled": "󰂲",
         "format-connected": "{device_battery_percentage}% "
     },
@@ -109,8 +109,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "deactivated": " ",
-            "activated": " "
+            "deactivated": "off",
+            "activated": "atv"
         }
     }
 }
