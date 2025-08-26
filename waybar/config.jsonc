@@ -54,7 +54,7 @@
     },
 
     "pulseaudio": {
-        "format": "{volume}% {icon}",
+        "format": "{volume}% {icon} ",
         "format-muted": "",
         "format-icons": {
             "headphone": "",
@@ -72,8 +72,8 @@
         "critical": 15
     },
     "format": "{capacity}% {icon}",
-    "format-icons": ["", "", "", "", "", "", "", "", "", ""],
-    "format-charging": "{capacity}% ",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂀", "󰂁", "󰁹"],
+    "format-charging": "{capacity}% 󰂄",
     "max-length": 25,
     "tooltip-format": "Cycles: {cycles}\nBattery Health: {health}%\n{timeTo}"
     },
@@ -109,8 +109,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "deactivated": "",
-            "activated": ""
+            "deactivated": " ",
+            "activated": " "
         }
     }
 }

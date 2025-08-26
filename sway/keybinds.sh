@@ -61,8 +61,11 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-bindgesture swipe:right workspace next
-bindgesture swipe:left workspace prev
+bindgesture swipe:right focus next
+bindgesture swipe:left focus prev
+
+bindgesture swipe:up workspace prev
+bindgesture swipe:down workspace next
 #
 # Workspaces:
 #

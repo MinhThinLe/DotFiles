@@ -10,7 +10,7 @@
 /*****----- Configuration -----*****/
 configuration {
     modi:                       "";
-    icon-theme:                 "Fluent";
+    icon-theme:                 "Fluent-dark";
     show-icons:                 true;
     display-combi:              " /  ";
     display-drun:               "";
