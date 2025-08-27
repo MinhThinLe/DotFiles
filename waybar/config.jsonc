@@ -86,7 +86,7 @@
     "temperature": {
         "thermal-zone": 8,
         "critical-threshold": 70,
-        "format": " {temperatureC} °C",
+        "format": " {temperatureC}°C",
         "interval": 5
     },
 
