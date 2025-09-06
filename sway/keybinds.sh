@@ -34,8 +34,6 @@ floating_modifier $mod normal
 # Reload the configuration file
 bindsym $mod+Shift+r reload
 
-# Exit sway (logs you out of your Wayland session)
-bindsym $mod+Shift+e exec swaynag -t warning -m 'Veux-tu vraiment quitter Sway?' -B 'Oui, quitter Sway' 'swaymsg exit'
 #
 # Moving around:
 #

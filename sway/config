@@ -23,7 +23,6 @@ include ./keybinds.sh
 output * bg ./wallpapers/evangelion.jpg fill
 output eDP-1 scale 1.125
 
-
 # Input stuff
 input * {
 	repeat_delay 250
@@ -56,7 +55,6 @@ exec {
     fcitx5 -d
     nm-applet
     waybar
-    swaync
     kanshi
     kdeconnectd
     kdeconnect-indicator
