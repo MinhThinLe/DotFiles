@@ -73,7 +73,7 @@
     },
     "format": "{icon} {capacity}%",
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂀", "󰂁", "󰁹"],
-    "format-charging": "chr {capacity}% 󰂄",
+    "format-charging": "󰂄 {capacity}%",
     "max-length": 25,
     "tooltip-format": "Cycles: {cycles}\nBattery Health: {health}%\n{timeTo}"
     },

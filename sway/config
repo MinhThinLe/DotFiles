@@ -6,7 +6,7 @@ set {
     $up k
     $right l
     $term kitty
-    $notif_center swaync-client -t -sw
+    $network networkmanager_dmenu
     $menu ~/.config/rofi/launchers/type-1/launcher.sh
     $screenshot ~/.config/rofi/applets/bin/screenshot.sh
     $powermenu ~/.config/rofi/applets/bin/powermenu.sh
