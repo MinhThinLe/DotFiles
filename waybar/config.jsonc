@@ -109,8 +109,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "deactivated": "off",
-            "activated": "atv"
+            "deactivated": "",
+            "activated": ""
         }
     }
 }
