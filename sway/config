@@ -13,6 +13,7 @@ set {
     $clipboard_man ~/.config/rofi/applets/bin/clipboard.sh
     $calculator ~/.config/rofi/applets/bin/calculator.sh
     $display_configurator ~/.config/rofi/applets/bin/monitor_setup.sh
+    $window_switcher ~/.config/rofi/applets/bin/window_switcher.sh
 }
 # These scripts depend on the value of previously set variables so they can't
 # be at the top despite how aesthetically pleasing that would look
@@ -38,6 +39,7 @@ input "type:touchpad" {
 	pointer_accel 0.2
 	tap enabled
     dwt disabled
+    drag_lock enabled
 }
 
 input "type:pointer" {

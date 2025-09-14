@@ -1,7 +1,4 @@
 [opener]
-play = [
-	{ run = 'mpv "$@"', orphan = true, for = "unix" },
-]
 edit = [
 	{ run = '$EDITOR "$@"', block = true, for = "unix" },
 ]
@@ -20,6 +17,9 @@ wine = [
 bat = [
 	{ run = 'bat "$@"', desc = "Open with bat", block = true }
 ]
+mpv = [
+	{ run = 'mpv "$@"', desc = "Play with mpv", block = true }
+]
 
 [open]
 prepend_rules = [
@@ -36,5 +36,6 @@ append_rules = [
 rules = [
 	{ mime = "image/*", use = "gwenview"},
 	{ mime = "text/*", use = "edit"},
-	{ mime = "video/*", use = "play"},
+	{ mime = "video/*", use = "mpv"},
+    { mime = "audio/*", use = "mpv"}
 ]

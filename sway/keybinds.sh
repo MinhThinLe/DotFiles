@@ -15,6 +15,7 @@ bindsym $mod+z                  exec $clipboard_man
 bindsym $mod+backslash          exec $calculator
 bindsym $mod+Shift+s            exec $display_configurator
 bindsym $mod+n                  exec $network
+bindsym $mod+w                  exec $window_switcher
 
 # Change volume
 bindsym XF86AudioLowerVolume    exec pactl set-sink-volume @DEFAULT_SINK@ -5%
