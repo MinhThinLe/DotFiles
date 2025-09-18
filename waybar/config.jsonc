@@ -2,8 +2,9 @@
     "spacing": 0,
     "reload_style_on_change": true,
     "modules-left": [
-        "sway/workspaces",
-        "sway/mode",
+        "niri/workspaces",
+        // "sway/workspaces",
+        // "sway/mode",
         "idle_inhibitor"
     ],
 
@@ -28,8 +29,8 @@
         "max-length": 10
     },
 
-    "sway/workspaces": {
-        "format": "{name}: {icon}",
+    "niri/workspaces": {
+        "format": " {icon} ",
         "format-icons": {
             "1": "",
             "2": "",
@@ -65,17 +66,16 @@
     },
 
     "battery": {
-    //"bat": "BAT2",
-    "interval": 10,
-    "states": {
-        "warning": 30,
-        "critical": 15
-    },
-    "format": "{icon} {capacity}%",
-    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂀", "󰂁", "󰁹"],
-    "format-charging": "󰂄 {capacity}%",
-    "max-length": 25,
-    "tooltip-format": "Cycles: {cycles}\nBattery Health: {health}%\n{timeTo}"
+        "interval": 10,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂀", "󰂁", "󰁹"],
+        "format-charging": "󰂄 {capacity}%",
+        "max-length": 25,
+        "tooltip-format": "Cycles: {cycles}\nBattery Health: {health}%\n{timeTo}"
     },
 
     "tray": {

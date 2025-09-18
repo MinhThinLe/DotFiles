@@ -71,11 +71,13 @@ tooltip {
 
 .modules-left #workspaces button.active {
     background-color: @workspace_active;
+    background: @background;
     padding: 5px 10px;
 }
 
 #workspaces button.focused {
     color: @workspace_focused;
+    background: @background;
     border-bottom: 2px solid @workspace_focused;
     border-radius: 0px;
 }
