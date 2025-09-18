@@ -271,7 +271,7 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
-spawn-at-startup "swaybg" "-i" "~/.config/sway/wallpapers/evangelion.jpg" "fill"
+spawn-sh-at-startup "swaybg -o '*' -i ~/.config/sway/wallpapers/evangelion.jpg -m fill"
 spawn-sh-at-startup "swayidle timeout 150 'pidof hyprlock || hyprlock' timeout 300 'swaymsg \"output * power off\"' resume 'swaymsg \"output * power on\"' timeout 450 'systemctl suspend' after-resume 'pidof hyprlock || hyprlock'"
 spawn-at-startup "fcitx5" "-d"
 spawn-at-startup "nm-applet"
@@ -374,11 +374,12 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal" { spawn "kitty"; }
     Mod+D hotkey-overlay-title="Launch apps" { spawn "~/.config/rofi/launchers/type-1/launcher.sh"; }
-    Mod+P hotkey-overlay-title="Launcher powermenu" { spawn "~/.config/rofi/applets/bin/powermenu.sh"; }
+    Mod+P hotkey-overlay-title="Launch powermenu" { spawn "~/.config/rofi/applets/bin/powermenu.sh"; }
     Mod+Z hotkey-overlay-title="Launch clipboard manager" { spawn "~/.config/rofi/applets/bin/clipboard.sh"; }
     Mod+BackSlash hotkey-overlay-title="Launch calculator" { spawn "~/.config/rofi/applets/bin/calculator.sh"; }
     Mod+Shift+S hotkey-overlay-title="Launch display configurator" { spawn "~/.config/rofi/applets/bin/monitor_setup.sh"; }
     Mod+W hotkey-overlay-title="Launch window switcher" { spawn "~/.config/rofi/applets/bin/window_switcher.sh"; }
+    Mod+N hotkey-overlay-title="Launch network configurator" { spawn "networkmanager_dmenu"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
