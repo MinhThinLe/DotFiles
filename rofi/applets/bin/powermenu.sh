@@ -94,9 +94,9 @@ run_cmd() {
 	elif [[ "$1" == '--opt3' ]]; then
 		confirm_run 'systemctl suspend'
 	elif [[ "$1" == '--opt4' ]]; then
-		confirm_run 'systemctl reboot'
+		confirm_run 'reboot'
 	elif [[ "$1" == '--opt5' ]]; then
-		confirm_run 'systemctl poweroff'
+		confirm_run 'poweroff'
 	fi
 }
 

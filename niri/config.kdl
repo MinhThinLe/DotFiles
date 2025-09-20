@@ -278,8 +278,8 @@ spawn-at-startup "nm-applet"
 spawn-at-startup "kanshi"
 spawn-at-startup "kdeconnectd"
 spawn-at-startup "kdeconnect-indicator"
-spawn-at-startup "wlsunset -t 3500 -S 6:30 -s 19:30"
-spawn-at-startup "wl-paste --watch cliphist store"
+spawn-sh-at-startup "wlsunset -t 3500 -S 6:30 -s 19:30"
+spawn-sh-at-startup "wl-paste --watch cliphist store"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
