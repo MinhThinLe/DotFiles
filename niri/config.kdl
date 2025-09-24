@@ -68,7 +68,7 @@ input {
 
     // Focus windows and outputs automatically when moving the mouse into them.
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
-    // focus-follows-mouse max-scroll-amount="0%"
+    focus-follows-mouse max-scroll-amount="90%"
 }
 
 // You can configure outputs by their name, which you can find
@@ -271,8 +271,6 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
-spawn-sh-at-startup "swaybg -o '*' -i ~/.config/sway/wallpapers/evangelion.jpg -m fill"
-spawn-sh-at-startup "swayidle timeout 150 'pidof hyprlock || hyprlock' timeout 300 'swaymsg \"output * power off\"' resume 'swaymsg \"output * power on\"' timeout 450 'systemctl suspend' after-resume 'pidof hyprlock || hyprlock'"
 spawn-at-startup "fcitx5" "-d"
 spawn-at-startup "nm-applet"
 spawn-at-startup "kanshi"
@@ -280,6 +278,8 @@ spawn-at-startup "kdeconnectd"
 spawn-at-startup "kdeconnect-indicator"
 spawn-sh-at-startup "wlsunset -t 3500 -S 6:30 -s 19:30"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
+spawn-sh-at-startup "swaybg -o '*' -i ~/.config/sway/wallpapers/evangelion.jpg -m fill"
+spawn-sh-at-startup "swayidle timeout 150 'pidof hyprlock || hyprlock' timeout 300 'swaymsg \"output * power off\"' resume 'swaymsg \"output * power on\"' timeout 450 'systemctl suspend' after-resume 'pidof hyprlock || hyprlock'"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -351,7 +351,7 @@ window-rule {
 
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
-/-window-rule {
+window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
 }
@@ -622,4 +622,8 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
+}
+
+environment {
+    //DISPLAY ":1"
 }
