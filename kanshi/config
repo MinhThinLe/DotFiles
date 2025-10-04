@@ -4,7 +4,7 @@ profile single_screen {
 
 profile external_monitor_only {
     output eDP-1 disable
-    output HDMI-A-1 enable
+    output HDMI-A-1 enable mode 1920x1080@75Hz
 }
 
 profile builtin_monitor_only {
@@ -13,8 +13,8 @@ profile builtin_monitor_only {
 }
 
 profile extend {
-    output eDP-1 enable position 0,0
     output HDMI-A-1 enable position 1920,0
+    output eDP-1 enable position 0,0
 }
 
 profile duplicate {

@@ -27,6 +27,7 @@ alias l='ls'
 alias cat='bat'
 alias grep='rg'
 alias rpi-ssh='ssh -i ~/.ssh/id_rsa rpi@192.168.1.31'
+alias debbie-ssh='ssh -i ~/.ssh/debian-server debbie@192.168.1.32'
 alias reload='source ~/.zshrc'
 
 export PATH=$HOME/.local/bin:$PATH

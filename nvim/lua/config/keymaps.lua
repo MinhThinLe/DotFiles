@@ -37,8 +37,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
         set_map('n', '<leader>k', function() vim.diagnostic.goto_prev() end, opts)
         set_map('n', '<leader>o', function() vim.diagnostic.open_float() end, opts)
         set_map('n', '<leader>ca', function() vim.lsp.buf.code_action() end, opts)
-        set_map('n', '<leader>rr', function() vim.lsp.buf.references() end, opts)
-        set_map('n', '<F2>', function() vim.lsp.buf.rename() end, opts)
+        set_map('n', '<leader>rf', function() vim.lsp.buf.references() end, opts)
+        set_map('n', '<leader>rn', function() vim.lsp.buf.rename() end, opts)
         set_map('i', '<C-h>', function() vim.lsp.buf.signature_help() end, opts)
     end,
 })
