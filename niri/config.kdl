@@ -263,10 +263,10 @@ spawn-at-startup "nm-applet"
 spawn-at-startup "kanshi"
 spawn-at-startup "kdeconnectd"
 spawn-at-startup "kdeconnect-indicator"
-spawn-sh-at-startup "wlsunset -t 3500 -S 6:30 -s 19:30"
+spawn-at-startup "~/scripts/idle.sh"
+spawn-at-startup "~/scripts/night-light.sh"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
 spawn-sh-at-startup "swaybg -o '*' -i ~/.config/sway/wallpapers/evangelion.jpg -m fill"
-spawn-sh-at-startup "swayidle timeout 150 'pidof hyprlock || hyprlock' timeout 300 'swaymsg \"output * power off\"' resume 'swaymsg \"output * power on\"' timeout 450 'systemctl suspend' after-resume 'pidof hyprlock || hyprlock'"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
