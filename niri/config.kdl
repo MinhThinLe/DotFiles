@@ -11,7 +11,6 @@ input {
         xkb {
             options "caps:escape"
         }
-
         numlock
         repeat-delay 250
         repeat-rate 60
@@ -76,7 +75,7 @@ output "eDP-1" {
     // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
 
     // You can use integer or fractional scale, for example use 1.5 for 150% scale.
-    scale 1.125
+    scale 1
     variable-refresh-rate on-demand=true
 
     // Transform allows to rotate the output counter-clockwise, valid values are:
@@ -355,6 +354,7 @@ binds {
     Mod+Shift+S hotkey-overlay-title="Launch display configurator" { spawn "~/.config/rofi/applets/bin/monitor_setup.sh"; }
     Mod+W hotkey-overlay-title="Launch window switcher" { spawn "~/.config/rofi/applets/bin/window_switcher.sh"; }
     Mod+N hotkey-overlay-title="Launch network configurator" { spawn "networkmanager_dmenu"; }
+    Mod+Grave hotkey-overlay-title="Launch password manager" { spawn "~/.config/rofi/applets/bin/password_manager.sh"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.

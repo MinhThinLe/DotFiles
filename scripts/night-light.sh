@@ -3,6 +3,6 @@ END_TIME="6:30"
 COLOR_TEMPERATURE="3500"
 
 wlsunset \
-    -t COLOR_TEMPERATURE \
-    -s START_TIME \
-    -S END_TIME \
+    -t $COLOR_TEMPERATURE \
+    -s $START_TIME \
+    -S $END_TIME \
