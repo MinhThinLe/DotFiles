@@ -43,7 +43,7 @@ fi
 
 # Rofi CMD
 rofi_cmd() {
-	rofi -theme-str "listview {columns: $list_col; lines: $list_row;}" \
+	rofi -theme-str "listview {columns: $list_col; lines: $list_row;} window { width: 400px;}" \
 		-theme-str 'textbox-prompt-colon {str: "";}' \
 		-dmenu \
 		-p "$prompt" \
