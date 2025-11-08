@@ -1,7 +1,7 @@
-swayidle \
-    lock 'pidof hyprlock || hyprlock' \
+swayidle -w \
+    lock "pidof hyprlock || hyprlock -q" \
     unlock 'pkill hyprlock' \
-    timeout 300 'pidof hyprlock || hyprlock' \
+    timeout 300 "loginctl lock-session" \
     timeout 480 'niri msg action power-off-monitors' \
     timeout 600 'systemctl suspend' \
-    before-sleep 'pidof hyprlock || hyprlock &'
+    before-sleep "loginctl lock-session"
