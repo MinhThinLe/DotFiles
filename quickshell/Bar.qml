@@ -3,6 +3,9 @@ import Quickshell.Io
 import QtQuick
 import QtQuick.Layouts
 
+import "widgets"
+import "configs"
+
 Scope {
     id: root
     property string time
@@ -25,7 +28,8 @@ Scope {
                 id: left_box
                 anchors.left: parent.left
                 anchors.verticalCenter: parent.verticalCenter
-
+                
+                Workspaces {}
             }
 
             RowLayout {
