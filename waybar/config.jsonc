@@ -25,7 +25,7 @@
     ],
 
     "cpu": {
-        "interval": 2,
+        "interval": 1,
         "format": "󰍛 {usage}%",
         "max-length": 10
     },
@@ -67,7 +67,7 @@
     },
 
     "battery": {
-        "interval": 10,
+        "interval": 1,
         "states": {
             "warning": 30,
             "critical": 15
@@ -85,14 +85,14 @@
     },
 
     "temperature": {
-        "thermal-zone": 5,
+        "thermal-zone": 8,
         "critical-threshold": 70,
         "format": " {temperatureC}°C",
-        "interval": 5
+        "interval": 1
     },
 
     "memory": {
-        "interval": 30,
+        "interval": 1,
         "format": " {}%",
         "max-length": 10
     },
