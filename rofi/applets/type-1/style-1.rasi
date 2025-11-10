@@ -35,7 +35,7 @@ window {
     border-color:                @border;
     cursor:                      "default";
     background-color:            @background;
-    border-radius:               10px;
+    border-radius:               15px;
 }
 
 /*****----- Main Box -----*****/

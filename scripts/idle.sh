@@ -1,4 +1,4 @@
-swayidle -w \
+swayidle \
     lock "pidof hyprlock || hyprlock -q" \
     unlock 'pkill hyprlock' \
     timeout 300 "loginctl lock-session" \

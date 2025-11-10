@@ -12,7 +12,7 @@ configuration {
     modi:                       "";
     icon-theme:                 "Fluent-dark";
     show-icons:                 true;
-    display-combi:              " /  ";
+    display-combi:              " / ";
     display-drun:               "";
     display-run:                "";
     display-filebrowser:        "";
@@ -68,7 +68,7 @@ window {
     margin:                      0px;
     padding:                     0px;
     border:                      2px solid;
-    border-radius:               10px;
+    border-radius:               15px;
     border-color:                @border;
     cursor:                      "default";
     /* Backgroud Colors */
