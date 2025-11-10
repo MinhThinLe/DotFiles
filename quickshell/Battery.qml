@@ -1,5 +1,7 @@
 import QtQuick
 
+import "script.js" as JS
+
 Rectangle {
     width: inner_text.width + WindowConfig.padding_left + WindowConfig.padding_right
     height: WindowConfig.bar_height - WindowConfig.margin_top - WindowConfig.margin_bottom
@@ -17,7 +19,7 @@ Rectangle {
     Text {
         id: inner_text
         color: ColorScheme.foreground
-        text: DataSource.time
+        text: JS.prepend_icon(DataSource.battery_percentage, DataSource.is_charging) + "%"
         anchors.centerIn: parent
     }
 }

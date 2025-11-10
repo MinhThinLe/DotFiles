@@ -44,7 +44,9 @@ if not vim.loop.fs_stat(pipepath) then
     vim.fn.serverstart(pipepath)
 end
 
-vim.lsp.enable('gdscript')
+vim.lsp.config('qmlls', {
+    cmd = { "qmlls", "-E" }
+})
 
 vim.diagnostic.config({
     virtual_text = true,
