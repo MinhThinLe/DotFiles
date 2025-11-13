@@ -21,16 +21,11 @@ require 'typst-preview'.setup {
     open_cmd = "chromium %s"
 }
 
-local Rule = require('nvim-autopairs.rule')
+local rule = require('nvim-autopairs.rule')
 local npairs = require('nvim-autopairs')
 
-npairs.add_rule(Rule("$", "$", "typst"))
-npairs.add_rule(Rule("```", "```", "typst"))
-
-require('render-markdown').setup({
-    render_modes = true,
-    preset = 'obsidian',
-})
+npairs.add_rule(rule("$", "$", "typst"))
+npairs.add_rule(rule("```", "```", "typst"))
 
 require('nvim-treesitter.configs').setup({
     hightlight = { enable = true },
@@ -53,3 +48,9 @@ require("lualine").setup {
 }
 
 require("oil").setup()
+
+--
+-- require('render-markdown').setup({
+--     render_modes = true,
+--     preset = 'obsidian',
+-- })
