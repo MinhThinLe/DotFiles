@@ -91,7 +91,7 @@ output "eDP-1" {
     // so to put another output directly adjacent to it on the right, set its x to 1920.
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
-    // position x=1280 y=0
+    position x=0 y=0
 }
 
 // Settings that influence how windows are positioned and sized.
@@ -265,7 +265,7 @@ spawn-at-startup "kdeconnect-indicator"
 spawn-at-startup "hypridle"
 spawn-at-startup "~/scripts/night-light.sh"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
-spawn-sh-at-startup "swaybg -o '*' -i ~/.config/sway/wallpapers/evangelion.jpg -m fill"
+spawn-sh-at-startup "swaybg -o '*' -i ~/.config/sway/wallpapers/scenery.jpg -m fill"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
@@ -551,7 +551,7 @@ binds {
     Mod+T { toggle-column-tabbed-display; }
 
     Print { screenshot; }
-    Ctrl+Print { screenshot-screen; }
+    Mod+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }

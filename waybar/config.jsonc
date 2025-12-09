@@ -6,6 +6,7 @@
         "niri/workspaces",
         // "sway/workspaces",
         // "sway/mode",
+        "wlr/taskbar",
         "idle_inhibitor"
     ],
 
@@ -14,15 +15,26 @@
     ],
 
     "modules-right": [
-        "cpu",
-        "backlight",
-        "memory",
-        "temperature",
-        "battery",
-        "pulseaudio",
-        "bluetooth",
+        "group/sensors",
         "tray"
     ],
+
+    "wlr/taskbar": {
+        "on-click": "activate"
+    },
+
+    "group/sensors": {
+        "orientation": "horizontal",
+        "modules": [
+            "cpu",
+            "backlight",
+            "memory",
+            "temperature",
+            "battery",
+            "pulseaudio",
+            "bluetooth"
+        ]
+    },
 
     "cpu": {
         "interval": 1,
@@ -31,16 +43,7 @@
     },
 
     "niri/workspaces": {
-        "format": " {icon} ",
-        "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "default": "",
-            "urgent": ""
-        }
+        "format": "{index}"
     },
 
     "clock": {
@@ -104,7 +107,7 @@
     "bluetooth": {
         "format": "󰂯 {status}",
         "format-disabled": "󰂲",
-        "format-connected": "{device_battery_percentage}% "
+        "format-connected": " {device_battery_percentage}%"
     },
 
     "idle_inhibitor": {

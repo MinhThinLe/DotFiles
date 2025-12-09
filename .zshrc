@@ -42,3 +42,9 @@ function y() {
 	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/archie/.dart-cli-completion/zsh-config.zsh ]] && . /home/archie/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+

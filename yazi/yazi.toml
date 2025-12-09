@@ -8,8 +8,8 @@ open = [
 zathura = [
 	{ run = 'zathura "$@"', desc = "Open with zathura", orphan = true }
 ]
-gwenview = [
-	{ run = 'gwenview "$@"', desc = "Open with Gwenview", orphan = true }
+loupe = [
+	{ run = 'loupe "$@"', desc = "Open with Loupe", orphan = true }
 ]
 wine = [
 	{ run = 'wine "$@"', desc = "Run Windows programs", orphan = true }
@@ -34,7 +34,7 @@ append_rules = [
 ]
 
 rules = [
-	{ mime = "image/*", use = "gwenview"},
+	{ mime = "image/*", use = "loupe"},
 	{ mime = "text/*", use = "edit"},
 	{ mime = "video/*", use = "mpv"},
     { mime = "audio/*", use = "mpv"}
