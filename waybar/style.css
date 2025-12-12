@@ -59,6 +59,13 @@ tooltip {
     border-bottom: 2px solid @green;
 }
 
+#taskbar.empty {
+    color: transparent;
+    background: transparent;
+    border: none;
+    margin: 0px;
+}
+
 /* All the members in group/sensors except the last */
 #memory,
 #backlight,
