@@ -126,7 +126,7 @@ tooltip {
 }
 
 #cpu.critical,
-#memory.critical
+#memory.critical,
 #battery.warning,
 #battery.critical,
 #battery.urgent {
