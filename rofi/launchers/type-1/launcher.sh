@@ -15,6 +15,8 @@ dir="$HOME/.config/rofi/launchers/type-1"
 theme='style-5'
 
 ## Run
+# -show combi -combi-modes "drun,window" \ # Replace `-show drun` with this in
+# case you want to show windows when launching apps
 rofi \
-    -show combi -combi-modes "drun,window" \
+    -show drun \
     -theme ${dir}/${theme}.rasi
