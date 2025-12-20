@@ -18,7 +18,7 @@ vim.cmd("language en_US.utf8")
 vim.cmd("colorscheme gruvbox")
 
 require 'typst-preview'.setup {
-    open_cmd = "firefox --new-window %s"
+    open_cmd = "zen-browser --new-window %s"
 }
 
 local rule = require('nvim-autopairs.rule')
