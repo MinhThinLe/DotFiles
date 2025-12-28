@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Links and shits
-apps=("kew" "nvim" "waybar" "zathura" "kitty" "yazi" "rofi" "hypr" "mako" "kanshi" "niri")
+apps=("kew" "sway" "nvim" "waybar" "zathura" "kitty" "yazi" "rofi" "hypr" "mako" "kanshi" "niri")
 
 for app in ${apps[@]}; do
     ln -sf $(pwd)/$app $HOME/.config/
