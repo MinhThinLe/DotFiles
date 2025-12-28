@@ -48,28 +48,3 @@ require("lualine").setup {
 }
 
 require("oil").setup()
-
-vim.o.tabline = "%!v:lua.Tabline()"
-
-vim.api.nvim_set_hl(0, "TabLine", { bg = "NONE" })
-vim.api.nvim_set_hl(0, "TabLineFill", { bg = "NONE" })
-
-vim.api.nvim_set_hl(0, "TabLinePillActive",   { fg = "#edbbb2", bg = "#98971a" })
-vim.api.nvim_set_hl(0, "TabLinePillInactive", { fg = "#ebdbb2", bg = "#928374" })
-
-function _G.Tabline()
-  local s = ""
-  local tabs = vim.api.nvim_list_tabpages()
-  local current = vim.api.nvim_get_current_tabpage()
-
-  for i, tab in ipairs(tabs) do
-	local is_active = (tab == current)
-
-	local hl_text  = is_active and "%#TabLinePillActive#"   or "%#TabLinePillInactive#"
-    
-	s = s .. hl_text .. " " .. i .. " "
-	s = s .. "%#TabLine# "
-  end
-
-  return s
-end
