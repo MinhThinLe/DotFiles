@@ -23,7 +23,7 @@ input {
         // dwtp
         // drag false
         drag-lock
-        // natural-scroll
+        natural-scroll
         accel-speed 0.2
         accel-profile "flat"
         // scroll-method "two-finger"
@@ -92,6 +92,11 @@ output "eDP-1" {
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
     position x=0 y=0
+}
+
+output "HDMI-A-1" {
+    position x=0 y=0
+    transform "normal"
 }
 
 // Settings that influence how windows are positioned and sized.
@@ -354,7 +359,6 @@ binds {
     Mod+Shift+S hotkey-overlay-title="Launch display configurator" { spawn "~/.config/rofi/applets/bin/monitor_setup.sh"; }
     Mod+W hotkey-overlay-title="Launch window switcher" { spawn "~/.config/rofi/applets/bin/window_switcher.sh"; }
     Mod+N hotkey-overlay-title="Launch network configurator" { spawn "networkmanager_dmenu"; }
-    Mod+Grave hotkey-overlay-title="Launch password manager" { spawn "~/.config/rofi/applets/bin/password_manager.sh"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
