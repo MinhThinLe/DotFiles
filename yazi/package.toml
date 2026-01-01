@@ -1,12 +1,7 @@
 [[plugin.deps]]
-use = "dedukun/relative-motions"
-rev = "2e3b617"
-hash = "b67ee12053113983273e9118a7d1272b"
-
-[[plugin.deps]]
 use = "yazi-rs/plugins:jump-to-char"
-rev = "86d28e4"
-hash = "d2f04875bbd4ed3dd5696e8c4b094fde"
+rev = "398796d"
+hash = "ce67445ebb1bf3d97b8e44f50904b2c5"
 
 [[flavor.deps]]
 use = "bennyyip/gruvbox-dark"

@@ -271,6 +271,7 @@ spawn-at-startup "hypridle"
 spawn-at-startup "~/scripts/night-light.sh"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
 spawn-sh-at-startup "swaybg -o '*' -i ~/.config/sway/wallpapers/scenery.jpg -m fill"
+spawn-sh-at-startup "rclone mount --vfs-cache-mode writes --dir-cache-time 5s copyparty: ~/copyparty"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
