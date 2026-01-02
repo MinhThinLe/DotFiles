@@ -37,7 +37,8 @@ case ${action_chosen} in
     $option_3)
         kanshictl switch extend
         ;;
-    $option4)
-        kanshictl switch duplicate
+    $option_4)
+        kanshictl switch extend
+        exec ~/scripts/present.sh
         ;;
 esac

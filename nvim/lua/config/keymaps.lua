@@ -1,6 +1,5 @@
 local set_map = vim.keymap.set
 local builtin = require('telescope.builtin')
-local ls = require("luasnip")
 
 vim.g.mapleader = ' '
 set_map('n', '<leader>ff', builtin.find_files, {})
@@ -22,9 +21,6 @@ set_map('t', '<Esc>', '<C-\\><C-n>')
 set_map('n', '<leader>y', '"+y')
 set_map('i', '<C-BS>', '<ESC>bdwi') -- Ctrl backspace bind
 set_map('n', '<leader>bb', ':b#<CR>')
-
-set_map({ "s", "i" }, "<C-j>", function() ls.jump(1) end, { silent = true })
-set_map({ "s", "n" }, "<C-k>", function() ls.jump(-1) end, { silent = true })
 
 vim.api.nvim_create_autocmd('LspAttach', {
     group = vim.api.nvim_create_augroup('user_lsp_attach', { clear = true }),
