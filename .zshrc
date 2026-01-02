@@ -31,7 +31,6 @@ alias debbie-ssh='ssh -i ~/.ssh/debian-server debbie@192.168.1.32'
 alias reload='source ~/.zshrc'
 
 export PATH=$HOME/.local/bin:$PATH
-export EDITOR=nvim
 export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
 export BAT_THEME="gruvbox-dark"
 
@@ -42,9 +41,3 @@ function y() {
 	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
-
-## [Completion]
-## Completion scripts setup. Remove the following line to uninstall
-[[ -f /home/archie/.dart-cli-completion/zsh-config.zsh ]] && . /home/archie/.dart-cli-completion/zsh-config.zsh || true
-## [/Completion]
-

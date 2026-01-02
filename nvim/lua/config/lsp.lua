@@ -26,7 +26,10 @@ cmp.setup({
     },
     snippet = {
         expand = function(args)
-            require('luasnip').lsp_expand(args.body)
+            local insert = MiniSnippets.config.expand.insert or MiniSnippets.default_insert
+            insert({ body = args.body }) -- Insert at cursor
+            cmp.resubscribe({ "TextChangedI", "TextChangedP" })
+            require("cmp.config").set_onetime({ sources = {} })
         end,
     },
 })

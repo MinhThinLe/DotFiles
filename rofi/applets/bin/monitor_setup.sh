@@ -13,7 +13,7 @@ option_4="Duplicate"
 
 rofi_cmd() {
 	rofi \
-        -theme-str "listview { lines: 4; }" \
+        -theme-str "listview { lines: 4; } window { width: 400px; }" \
 		-dmenu \
 		-p "$prompt" \
 		-mesg "$message" \

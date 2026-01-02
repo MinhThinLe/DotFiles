@@ -18,6 +18,11 @@ vim.cmd("language en_US.utf8")
 
 require("mini.pairs").setup()
 require("mini.basics").setup()
+require("mini.snippets").setup({
+    snippets = {
+        require("mini.snippets").gen_loader.from_lang(),
+    }
+})
 require("mini.files").setup({
     windows = {
         preview = true,
