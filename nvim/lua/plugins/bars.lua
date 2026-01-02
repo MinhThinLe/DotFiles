@@ -20,7 +20,11 @@ return {
     },
     {
         'nanozuki/tabby.nvim',
-        config = function()
-        end,
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
+        opts = {
+            preset = 'tab_only',
+            lualine_theme = "gruvbox",
+            nerdfont = true,
+        },
     }
 }

@@ -17,6 +17,7 @@ vim.opt.splitright = true
 vim.cmd("language en_US.utf8")
 
 require("mini.pairs").setup()
+require("mini.basics").setup()
 require("mini.files").setup({
     windows = {
         preview = true,
