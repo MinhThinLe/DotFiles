@@ -34,8 +34,9 @@ append_rules = [
 ]
 
 rules = [
-	{ mime = "image/*", use = "loupe"},
-	{ mime = "text/*", use = "edit"},
-	{ mime = "video/*", use = "mpv"},
-    { mime = "audio/*", use = "mpv"}
+	{ mime = "image/*", use = "loupe" },
+	{ mime = "text/*", use = "edit" },
+	{ mime = "video/*", use = "mpv" },
+    { mime = "audio/*", use = "mpv" },
+    { mime = "application/pdf", use = "zathura" }
 ]
