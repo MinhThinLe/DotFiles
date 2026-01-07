@@ -13,8 +13,11 @@ return {
         dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
         opts = {
             completion = { lsp = { enabled = true } },
-            preset = "obsidian",
+            preset = "lazy",
             render_modes = { 'n', 'c', 'v', 'i', },
+            code = {
+                conceal_delimiters = false,
+            }
         },
     }
 }

@@ -16,6 +16,11 @@ vim.opt.splitright = true
 
 vim.cmd("language en_US.utf8")
 
+vim.api.nvim_create_autocmd('FileType', {
+    pattern = { 'markdown' },
+    callback = function() vim.treesitter.start() end,
+})
+
 require("mini.pairs").setup()
 require("mini.basics").setup()
 require("mini.snippets").setup({
