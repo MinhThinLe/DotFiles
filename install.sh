@@ -1,4 +1,4 @@
 #!/bin/sh
 
 stow home -t ~
-stow etc -t /etc
+sudo stow etc -t /etc
