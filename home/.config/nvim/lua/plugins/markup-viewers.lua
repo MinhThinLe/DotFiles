@@ -7,17 +7,4 @@ return {
             open_cmd = "zen-browser --new-window %s"
         }
     },
-    {
-        'MeanderingProgrammer/render-markdown.nvim',
-        ft = 'markdown',
-        dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
-        opts = {
-            completion = { lsp = { enabled = true } },
-            preset = "lazy",
-            render_modes = { 'n', 'c', 'v', 'i', },
-            code = {
-                conceal_delimiters = false,
-            }
-        },
-    }
 }
