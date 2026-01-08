@@ -21,6 +21,7 @@ set_map('t', '<Esc>', '<C-\\><C-n>')
 set_map('i', '<C-BS>', '<ESC>bdwi') -- Ctrl backspace bind
 set_map('n', '<leader>bb', ':b#<CR>')
 
+
 vim.api.nvim_create_autocmd('LspAttach', {
     group = vim.api.nvim_create_augroup('user_lsp_attach', { clear = true }),
     callback = function(event)
