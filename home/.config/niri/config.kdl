@@ -408,8 +408,8 @@ binds {
     Mod+Ctrl+K     { move-window-up-or-to-workspace-up; }
 
     // For mice with more than 3 buttons
-    Mod+MouseBack { focus-column-left; }
-    Mod+MouseForward { focus-column-right; }
+    Mod+MouseForward { focus-column-left; }
+    Mod+MouseBack { focus-column-right; }
 
     Mod+Shift+MouseBack { focus-window-or-workspace-down; }
     Mod+Shift+MouseForward { focus-window-or-workspace-up; }
