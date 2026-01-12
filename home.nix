@@ -56,6 +56,7 @@
     wl-mirror
     yazi
     zathura
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -70,6 +71,14 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
   ];
+
+  programs.git.settings = {
+    userName = "t0ast";
+    userEmail = "minhthinle69@gmail.com"; # Google bad, I know, but I don't use emails that much to justify a migration 
+    extraConfig = {
+      init.defaultBranch = "main";
+    };
+  };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.

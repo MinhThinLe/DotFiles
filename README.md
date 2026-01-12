@@ -1,24 +1,22 @@
 # Dotfiles collection
 
-If you wish to install these, first, install its dependencies
+If you wish to install these, first, setup [home manager](https://nix-community.github.io/home-manager/index.xhtml#ch-installation)
+
+Then clone the repo to its designated location with
 
 ```sh
-sudo pacman -S git stow
+git clone -C $HOME/.config/ https://github.com/MinhThinLe/dotfiles
 ```
 
-Clone the repo
+Move the repo to its correct location (this could be done much more elegantly
+but I'm too much of a noob with git)
 
 ```sh
-git clone https://MinhThinLe/dotfiles
+mv $HOME/.config/dotfiles $HOME/.config/home-manager
 ```
 
-Then execute the install script
+Then install it with
 
 ```sh
-cd dotfiles
-./install.sh
+home-manager switch
 ```
-
-The install "script" can be a little finicky as it's only a shorthand for
-2 stow commands, if any errors were to pop up, please take the time out to
-google the problems yourself.
