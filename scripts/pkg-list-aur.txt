@@ -1,0 +1,13 @@
+execstack
+fluent-icon-theme-git
+gpu-screen-recorder
+gpu-screen-recorder-notification
+gpu-screen-recorder-ui
+gruvbox-dark-gtk
+kvantum-theme-gruvbox-git
+libwireplumber-4.0-compat
+pwvucontrol
+qt6ct-kde
+ungoogled-chromium-bin
+yay
+zen-browser-bin
