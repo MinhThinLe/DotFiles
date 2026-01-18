@@ -65,7 +65,6 @@ wl-clipboard
 wlsunset
 xdg-desktop-portal-gnome
 xwayland-satellite
-yazi
 zathura
 zathura-pdf-poppler
 zram-generator
