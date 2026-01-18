@@ -21,6 +21,7 @@ SAVEHIST=5000
 setopt autocd extendedglob
 # End of lines configured by zsh-newuser-install
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 alias ls='eza'
 alias l='ls'
@@ -29,6 +30,7 @@ alias grep='rg'
 alias rpi-ssh='ssh -i ~/.ssh/id_rsa rpi@192.168.1.31'
 alias debbie-ssh='ssh -i ~/.ssh/debian-server debbie@192.168.1.32'
 alias reload='source ~/.zshrc'
+alias cd='z'
 
 export PATH=$HOME/.local/bin:$PATH
 

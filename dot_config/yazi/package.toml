@@ -1,9 +1,0 @@
-[[plugin.deps]]
-use = "yazi-rs/plugins:jump-to-char"
-rev = "398796d"
-hash = "ce67445ebb1bf3d97b8e44f50904b2c5"
-
-[[flavor.deps]]
-use = "bennyyip/gruvbox-dark"
-rev = "91fdfa7"
-hash = "f48f510e5505f5d01e79c4f8257ec5cb"
