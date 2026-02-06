@@ -1,13 +1,11 @@
 execstack
 fluent-icon-theme-git
-gpu-screen-recorder
-gpu-screen-recorder-notification
-gpu-screen-recorder-ui
 gruvbox-dark-gtk
 kvantum-theme-gruvbox-git
 libwireplumber-4.0-compat
+paru
 pwvucontrol
 qt6ct-kde
+ttf-icomoon-feather
 ungoogled-chromium-bin
-yay
 zen-browser-bin
