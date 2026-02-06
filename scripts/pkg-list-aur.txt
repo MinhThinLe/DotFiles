@@ -3,7 +3,6 @@ fluent-icon-theme-git
 gruvbox-dark-gtk
 kvantum-theme-gruvbox-git
 libwireplumber-4.0-compat
-paru
 pwvucontrol
 qt6ct-kde
 ttf-icomoon-feather
