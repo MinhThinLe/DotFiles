@@ -6,9 +6,9 @@ If you wish to install this, install [chezmoi](https://www.chezmoi.io/install/)
 
 Then run
 ```sh
-chezmoi -- init --apply MinhThinLe
+chezmoi init https://github.com/MinhThinLe/dotfiles
 ```
 to apply the dotfiles
 
-The above command is untested though so if any errors pop up, please sumbit
-a bug report or something 
+If you're on arch, run the script `install-pkgs.sh` to install all the required
+packages
