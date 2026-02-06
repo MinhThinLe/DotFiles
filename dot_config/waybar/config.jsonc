@@ -49,7 +49,7 @@
     "clock": {
         "format": "{:%R %A, %B %d, %Y}",
         "timezone": "Asia/Ho_Chi_Minh",
-        "locale": "fr_FR.UTF8"
+        // "locale": "fr_FR.UTF8"
     },
 
     "backlight": {
